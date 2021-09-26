@@ -55,8 +55,9 @@ export default class Header extends React.Component {
                 <nav className="navbar" aria-label="Main Navigation">
                     {logo ? (
                         <div className="navbar__logo">
-                            <div className="navbar__title"></div>
-                            <Link href={withPrefix('/')}><img src={withPrefix(logo)} alt={logoAlt} /></Link>
+                            <div className="navbar__title">
+                                <Link href={withPrefix('/')}><img src={withPrefix(logo)} alt={logoAlt} /></Link>
+                            </div>
                         </div>
                     ) : (
                         <div className="navbar__title">
