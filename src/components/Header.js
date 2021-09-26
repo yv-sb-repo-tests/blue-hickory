@@ -56,7 +56,6 @@ export default class Header extends React.Component {
                     {logo ? (
                         <div className="navbar__logo">
                             <Link href={withPrefix('/')}><img src={withPrefix(logo)} alt={logoAlt} /></Link>
-
                         </div>
                     ) : (
                         <div className="navbar__title">
